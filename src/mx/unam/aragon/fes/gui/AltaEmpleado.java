@@ -343,6 +343,7 @@ public class AltaEmpleado extends javax.swing.JFrame {
             }
         });
 
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel14.setText("0");
         jLabel14.setToolTipText("");
 
@@ -370,14 +371,14 @@ public class AltaEmpleado extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel14)
-                .addGap(392, 392, 392))
+                .addGap(404, 404, 404))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addComponent(jLabel14)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -493,6 +494,18 @@ public class AltaEmpleado extends javax.swing.JFrame {
             this.jTextField3.setText(e.getApMaterno());
             this.jTextField4.setText("" + e.getEdad());
             this.jTextField5.setText(e.getCurp());
+            this.jTextField6.setText(e.getDomicilio().getCalle());
+            this.jTextField7.setText(e.getDomicilio().getNumero());
+            this.jTextField8.setText(e.getDomicilio().getColonia());
+            this.jTextField9.setText(e.getDomicilio().getDelegacion());
+            this.jTextField10.setText(e.getDomicilio().getEstado());
+            this.jTextField15.setText(e.getDomicilio().getCp());
+            this.jTextField11.setText("" + e.getNumeroEmpleado());
+            this.jTextField12.setText(e.getDepartamento());
+            this.jTextField13.setText("" + e.getSueldo());
+            this.jTextField14.setText("" + e.getHorasExtra());
+            
+            
         }
     }
 
